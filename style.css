@@ -1,0 +1,401 @@
+/* Basic reset and font settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #d38b1f;
+}
+
+/* Header styles */
+header {
+    background-color: #7376ff;
+    color: rgb(255, 255, 255);
+    padding: 1em 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section styles */
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #fff6f6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    background-color: #ffefef;
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: fantasy;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fffffff8;
+    background-image: url(https://png.pngtree.com/background/20220810/original/pngtree-pramuka-background-design-vector-png-camp-wallpaper-picture-image_1915406.jpg)
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: fixed;
+} 
+
+.image-section img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.image-section1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.image-section1 img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+section:nth-child(even) {
+    background-color: #ffffff;
+}
+
+section h4 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+section i {
+    font-size: 5%;
+    margin-bottom: 30px;
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+marquee {
+    color: red;
+    border: 1px solid red;
+    background-color: #ffefef;
+}
+
+section h5 {
+    color: black;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section p {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+
+section a {
+    font-size: 18px;
+    color:wheat;
+}
+
+.parent {
+    display: grid;
+    place-items: center;
+    }
+
+/* Style Button */
+.button-custom {
+    padding: 2rem 3rem;
+    display: inline-block;
+    background: #4285F4;
+    color: #fff;
+    width: 240px;
+    height: 50px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem 0;
+}
+
+.btn-warning{
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: red;
+    white-space: nowrap;
+    background-color: aqua;
+    border: 0;
+    overflow: hidden;
+    transition: 0,2s;
+    margin: 2rem 0;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-warning input[type="file"]{
+    cursor: pointer;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: scale(5);
+    opacity: 0;
+}
+
+.btn-warning:hover{
+    background: #d38b1f;
+}
+
+.besar {
+    line-height: 80px;
+}
+
+.box {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.box1 {
+    color: black;
+    margin-bottom: 40px;
+}
+
+/* Main Section Styles */
+main {
+    padding: 2rem;
+}
+
+.upload-section, .gallery-section {
+    margin-bottom: 2rem;
+}
+
+.upload-section h2, .gallery-section h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form input[type="file"] {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+button1 {
+    padding: 0.5rem 6rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 22 ;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Gallery Styles */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-gallery img {
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid #ccc;
+}
+
+.countdown-container {
+    text-align: center;
+}
+
+.countdown {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.countdown-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 100px;
+    margin: 10px;
+}
+
+.countdown-element span {
+    font-size: 5rem;
+}
+
+.label {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: rgb(88, 65, 223);
+}
+
+@media (max-width: 600px) {
+    .countdown-element span {
+        font-size: 2.2rem;
+    }
+    .label {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .countdown-element span {
+        font-size: 1.25rem;
+    }
+    .label {
+        font-size: 0.5rem;
+    }
+}
+
+/* Scroll to top button styles */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button at the right side of the page */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #7a660b; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.5s, transform 0.5s; /* Smooth transition for opacity and transform */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #7376ff; /* Add a dark-grey background on hover */
+}
+
+#scrollToTopBtn.show {
+    display: block;
+    opacity: 1; /* Fade-in effect */
+    transform: translateY(0); /* Slide-in effect */
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a73d8;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero {
+        padding: 60px 20px;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    section1 {
+        padding: 40px 20px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Regu Komodo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>SELAMAT DATANG DI WEB GAMBAR</h1>
+        <nav>
+            <a href="index.html" class="logo">REGU KOMODO</a>
+            <ul>
+                <button1><li><a href="index.html">Kembali Ke Halaman Utama</a></li></button1>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="tian">
+            <h4>Hitung Mudur Kemah Bakti</h4>
+            <div class="countdown-container">
+                <div class="countdown">
+                    <div class="countdown-element">
+                        <span class="days">00</span>
+                        <span class="label">Hari</span>
+                    </div>
+                    <div class="countdown-element">
+                        <span class="hours">00</span>
+                        <span class="label">Jam</span>
+                    </div>
+                    <div class="countdown-element">
+                        <span class="minutes">00</span>
+                        <span class="label">Menit</span>
+                    </div>
+                    <div class="countdown-element">
+                        <span class="seconds">00</span>
+                        <span class="label">Detik</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="image-section">
+            <img
+                src="Gambar WhatsApp 2024-05-22 pukul 12.50.26_8a9ca6d0.jpg"
+                alt="Placeholder Image"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="Gambar WhatsApp 2024-05-22 pukul 16.56.48_0064246a.jpg"
+                alt="Placeholder Image"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="gapurakw.jpg"
+                alt="Placeholder Image"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="pak7.jpg"
+                alt="tunggu/error"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="Screenshot 2024-05-22 192916.png"
+                alt="Placeholder Image"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="https://th.bing.com/th/id/OIG3.2ixpvx6fUMFq6t4RqskJ?pid=ImgGn"
+                alt="Placeholder Image"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="https://images.unsplash.com/photo-1580883688613-b2c0f57a1f89?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Placeholder Image"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="https://images.unsplash.com/photo-1658767309785-179b2fe33b24?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Placeholder Image"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="https://images.unsplash.com/photo-1586800931722-241a7a8193bb?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Placeholder Image"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="tara.jpg"
+                alt="error"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="bondan.jpg"
+                alt="error/wait"
+            />
+        </section>
+        <section class="image-section">
+            <img
+                src="Gambar WhatsApp 2024-05-22 pukul 16.56.46_bd329b51.jpg"
+                alt="Placeholder Image"
+            />
+        </section>
+        <section class="upload-section">
+            <h2>Upload an Image</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <button type="button" type="submit" class="btn-warning">Unggah dari galeri
+                <input type="file" id="imageUpload" accept="image/*" required>
+                <button type="submit">Posting</button>
+                </button>
+            </form>
+        </section>
+        <section class="gallery-section">
+            <h2>Galeri umum</h2>
+            <div id="imageGallery" class="image-gallery">
+                <!-- Images will be displayed here -->
+            </div>
+        </section>
+    </main>
+    <section href="halaman2.html">
+        <audio autoplay src="pramuka new.mp3"></audio>
+        <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">⇧</button>
+    </section>
+    <footer>
+        <p>kontak: 0895-3006-7456</p>
+        <p>email: yoannormal08367@gmail.com</p>
+        <p>&copy; 2024 Regu Komodo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="jam.js"></script>
+    <script>
+        // Get the button
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.classList.add("show");
+    } else {
+        mybutton.classList.remove("show");
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll
+    });
+}
+
+    </script>
+</body>
+</html>

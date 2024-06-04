@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Regu Komodo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>SELAMAT DATANG DI WEB GAME</h1>
+        <nav>
+        <a herf="#" class="logo">REGU KOMODO</a>
+        <ul>
+            <button1><li><a href="index.html">Kembali Ke Halaman Utama</a></li></button1>
+        </ul>
+    </header>
+    <section id="tian">
+        <h4>Hitung Mudur Kemah Bakti</h4>
+        <div class="countdown-container">
+            <div class="countdown">
+                <div class="countdown-element">
+                    <span class="days">00</span>
+                    <span class="label">Hari</span>
+                </div>
+                <div class="countdown-element">
+                    <span class="hours">00</span>
+                    <span class="label">Jam</span>
+                </div>
+                <div class="countdown-element">
+                    <span class="minutes">00</span>
+                    <span class="label">Menit</span>
+                </div>
+                <div class="countdown-element">
+                    <span class="seconds">00</span>
+                    <span class="label">Detik</span>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="perkabpribadi">
+            <audio autoplay src="pramuka new.mp3"></audio>
+            <h2>Game 1</h2>
+            <p>Klik dibawah untuk memainkan game Tebak-Tebakan</p>
+            <p>.</p>
+            <div class="box">
+                <ul>
+                    <button1><a href="bola.html">Klik disini</a></button1>
+                </ul>
+            </div>
+        </section>
+        <section id="perkabpribadi">
+            <h2>Game 2</h2>
+            <p>Klik dibawah untuk memainkan game Tes Logika</p>
+            <p>.</p>
+            <div class="box">
+                <ul>
+                    <button1><a href="logika.html">Klik disini</a></button1>
+                </ul>
+            </div>
+        </section>
+        <section id="perkabpribadi">
+            <h2>Game 3</h2>
+            <p>Klik dibawah untuk memainkan game Tic Tac Toe</p>
+            <p>.</p>
+            <div class="box">
+                <ul>
+                    <button1><a href="tictactoe.html">Klik disini</a></button1>
+                </ul>
+            </div>
+        </section>
+        <section id="perkabpribadi">
+            <h2>Game 4</h2>
+            <p>Klik dibawah untuk memainkan game Labirin</p>
+            <p>.</p>
+            <div class="box">
+                <ul>
+                    <button1><a href="labirin.html">Klik disini</a></button1>
+                </ul>
+            </div>
+        </section>
+        <section id="perkabpribadi">
+            <h2>Game 5</h2>
+            <p>Klik dibawah untuk memainkan game Ular/Cacing</p>
+            <p>.</p>
+            <div class="box">
+                <ul>
+                    <button1><a href="gamePanel.java">Klik disini</a></button1>
+                </ul>
+            </div>
+        </section>
+        <section id="perkabpribadi">
+            <h2>Game 6</h2>
+            <p>Klik dibawah untuk memainkan game Batu Kertas Gunting</p>
+            <p>.</p>
+            <div class="box">
+                <ul>
+                    <button1><a href="pinkpong.html">Klik disini</a></button1>
+                </ul>
+            </div>
+        </section>
+         <!-- Scroll to top button -->
+         <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">⇧</button>
+        <footer>
+            <p>kontak: 0895-3006-7456</p>
+            <p>email: yoannormal08367@gmail.com</p>
+            <p>&copy; 2024 Regu Komodo.</p>
+        </footer>
+    <script src="jam.js"></script>
+    <script>
+          // Get the button
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.classList.add("show");
+    } else {
+        mybutton.classList.remove("show");
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll
+    });
+}
+    </script>
+</body>
+</html>
